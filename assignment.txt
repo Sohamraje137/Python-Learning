@@ -1,0 +1,35 @@
+/*Q.1 Reverse a vector (first element becomes last)*/
+
+import numpy as np
+x=np.arange(10,25,5)
+print(x)
+x=np.flip(x,0) 
+#x[::-1]
+print(x)
+
+/*Q.2 Create a 3x3 matrix with values ranging from 0 to 8 */
+
+import numpy as np
+x=np.arange(0,9) # x=range(10) 
+x.reshape(3,3)
+print(x)
+
+/*Q.3 Create a 2d array with 1 on the border and 0 inside*/
+
+import numpy as np
+x = np.ones((4,4))
+x[1:-1,1:-1] = 0
+print(x)
+
+/*Q.4 Multiply a 5x3 matrix by a 3x2 matrix (real matrix product) */
+
+import numpy as np
+x=np.random.randint(10,size=5*3)
+y=np.random.randint(10,size=2*3)
+x@y
+
+import numpy as np
+x=np.random.randint(10,size=5*3)
+y=np.random.randint(10,size=2*3)
+
+for i=0
