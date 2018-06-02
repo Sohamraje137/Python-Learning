@@ -1,0 +1,70 @@
+Data Base v/s File System
+Organised collection of interrelated data of an enterprise . We can perform operations like insert,delete,search,sort.
+File system can easily replaced .
+Failure of Files:
+Data Redundancy and in-consistency.
+Difficulty in accesing the data: Quries can be answered easily.
+Data Isolation. No miss match of data types.
+Integrity Constraints .
+Atomicity problems.Partial execution is not possible in DBMS.
+Concurrently access anomalies.
+Security.
+
+Data Abstraction
+Levels: Physical,Logical,View:
+Physical:Lowest level, Describes how data is stored .Explains complex data structure utilised in details.
+Logical: Describes what data is to be stored in the database, and what relationship between the data .Descibes entire database in terms of small number of relatively simpler structures
+View: Describes only part of entire database to the respective level.Doesnt allow a single user to view everything.
+
+Instances and schemes:
+Instances:At any instance of time the content of the database .
+Schemes:Logical description of programme  is algorithm. llly logical description of the database is Schema
+Physical Schema: Descibes the database design at physical level
+Logical Schema: Descibes the database design at Logical level.
+
+Physical Data independence: If application programme doesnt depend on the physical schema and thhus need not be rewritten if the physical leve; chnages .then it is called PDI.
+
+Data Basse user and User Interface:
+Naive User: Using database with a application layer.And the application programme has a backend programme which uses the Database.
+Application Programmer:They are the one who write the programme for Database. They create the database.
+Sophisticated:They can interact with database directly without GUI or any other need. They need to have Knowledge about Query programmes etc.
+Special : They Use the database for a certain type of specific application.
+
+Data Base Administrator:
+Scehma Description:Writes description DDL for the Schema.
+Storage structure and access method format:
+Schema and physical-organisation modification:alteration in felids additions of feilds in table
+Granting of Authorisation of Database:
+Routime maintainenace :
+Free Storage Managemnet, Checking of System performance ex.Checking qwether the system runs in Required time.
+
+
+Data Model
+Conceptual tool ,which descibing data,data relationships, meaning of data, scementic of data and consistency of those tool.
+Relational Model:Collection of tables to represent both data and the relationships among those data.
+ER Model:Entity has a permanent existance . It has attributes.
+Object Based Data Model:ER model extended with Encapsulation ,methods and object identity
+Semi-structured Data Model:Permits the specificaion pf data where individual data items of the same typwe may have different set of attributes .Extensible Markup Language.
+
+Database Languages:
+
+Data Manupilation Lang:DML
+Accessing and manupulating data.
+>Select:To read records into table
+>Insert:To insert records into table
+>Delete:Delete all the records from the table
+>Update:Update Data in table 
+Types Procedural,Non Procedural.
+Procedural:deals what-has to be done and how-how can it be executed.
+Non-Procedural:What -We need to write what shoyld be done in the particular Syntax.
+
+Data Defination Language: DDL:
+Create:To create a dataabse instance 
+ALter:To alter a dataabse instance 
+Drop:To drop a dataabse instance 
+Trunc:To delete a dataabse instance 
+Rename:To rename a dataabse instance 
+
+Data COntrol Lang: DCL
+Granting acess to the user or Revoke access from user .
+Revoke:			 Grant:
