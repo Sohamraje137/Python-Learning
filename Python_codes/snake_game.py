@@ -98,11 +98,19 @@ while True:
                 ]
                 food = nf if nf not in snake else None
             w.addch(food[0], food[1], curses.ACS_PI)
+            true =1 
         else:
             tail = snake.pop()
             w.addch(tail[0], tail[1], ' ')
         
         w.addch(snake[0][0], snake[0][1], curses.ACS_BLOCK)
+        if score%10==0 and score!=0 and true==1:
+         curses.flash()
+         curses.beep()
+         curses.beep()
+         true=0
+        
+
 # s.refresh()
 # print(sh)
 # print(sw)
